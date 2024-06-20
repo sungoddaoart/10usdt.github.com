@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(180deg, #3e3e3e 0%, #161616 100%);
+    color: white;
+    font-family: GTAmerica, Arial, sans-serif;
+    /* 添加回退字体 */
+    padding: 1rem;
+    margin: 0;
+    /* 去除默认外边距 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.center.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 比例 */
+    height: 0;
+    width: 100%;
+    max-width: 300px;
+    /* 限制最大宽度 */
+    margin: 0 auto;
+    /* 居中对齐 */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* 添加间距 */
+    flex-wrap: wrap;
+    /* 使项目在小屏幕上换行 */
+    margin: 2rem 0;
+    /* 添加上下外边距 */
+}
+
+.option {
+    flex: 1;
+    min-width: 280px;
+    /* 确保在较小的屏幕上不会太窄 */
+}
+
+.refund-button {
+    margin-bottom: 1rem;
+}
+
+.cta-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.refund-cta {
+    background-color: #007BFF;
+    /* 设置按钮背景颜色为蓝色 */
+    color: white;
+    /* 设置按钮文字颜色为白色 */
+    padding: 10px 20px;
+    /* 设置按钮内边距 */
+    border-radius: 5px;
+    /* 设置按钮圆角 */
+    display: inline-block;
+    font-size: 1rem;
+    /* 设置按钮文字大小 */
+    transition: background-color 0.3s ease;
+    /* 添加背景颜色过渡效果 */
+}
+
+.refund-cta:hover {
+    background-color: #0056b3;
+    /* 设置按钮悬停时的背景颜色 */
+}
+
+.scroll-scroll {
+    font-size: 2rem;
+    /* 设置“(📜, 📜)”的字体大小 */
+    margin-bottom: 1rem;
+    /* 添加底部外边距 */
+}
